@@ -23,95 +23,65 @@ ymax=1,
 zmin=-1,
 zmax=1,
 view={-77.4711922908485}{18.0246645268103},
-hide axis,
-title style={font=\bfseries},
-title={Type II}
+hide axis
 ]
-
-\addplot3[area legend,solid,draw=black,fill=blue,fill opacity=0,forget plot]
-table[row sep=crcr] {%
-x	y	z\\
+\addplot3 [color=black,solid]
+ table[row sep=crcr] {%
 -1	-1	-1\\
 1	-1	-1\\
 1	-1	1\\
 -1	-1	1\\
-}--cycle;
-
-\addplot3[area legend,solid,draw=black,fill=blue,fill opacity=0,forget plot]
-table[row sep=crcr] {%
-x	y	z\\
+};
+ \addplot3 [color=black,solid]
+ table[row sep=crcr] {%
 1	-1	-1\\
 1	1	-1\\
 1	1	1\\
 1	-1	1\\
-}--cycle;
-
-\addplot3[area legend,solid,draw=black,fill=blue,fill opacity=0,forget plot]
-table[row sep=crcr] {%
-x	y	z\\
+};
+ \addplot3 [color=black,solid]
+ table[row sep=crcr] {%
 1	1	-1\\
 -1	1	-1\\
 -1	1	1\\
 1	1	1\\
-}--cycle;
-
-\addplot3[area legend,solid,draw=black,fill=blue,fill opacity=0,forget plot]
-table[row sep=crcr] {%
-x	y	z\\
+};
+ \addplot3 [color=black,solid]
+ table[row sep=crcr] {%
 -1	1	-1\\
 -1	-1	-1\\
 -1	-1	1\\
 -1	1	1\\
-}--cycle;
-
-\addplot3[area legend,solid,draw=black,fill=blue,fill opacity=0,forget plot]
-table[row sep=crcr] {%
-x	y	z\\
+};
+ \addplot3 [color=black,solid]
+ table[row sep=crcr] {%
 -1	-1	-1\\
 1	-1	-1\\
 1	1	-1\\
 -1	1	-1\\
-}--cycle;
-
-\addplot3[area legend,solid,draw=black,fill=blue,fill opacity=0,forget plot]
-table[row sep=crcr] {%
-x	y	z\\
+};
+ \addplot3 [color=black,solid]
+ table[row sep=crcr] {%
 -1	-1	1\\
 1	-1	1\\
 1	1	1\\
 -1	1	1\\
-}--cycle;
-\addplot3 [color=mycolor1,mark size=4.5pt,only marks,mark=*,mark options={solid,fill=black,draw=black}]
+};
+ \addplot3 [color=mycolor1,mark size=4.5pt,only marks,mark=*,mark options={solid,fill=black,draw=black}]
  table[row sep=crcr] {%
 -1	-1	-1\\
 1	-1	-1\\
 -1	1	1\\
 1	1	1\\
 };
- \node[align=center, text=white]
-at (axis cs:-1,-1,-1) {A};
-\node[align=center, text=white]
-at (axis cs:1,-1,-1) {A};
-\node[align=center, text=white]
-at (axis cs:-1,1,1) {A};
-\node[align=center, text=white]
-at (axis cs:1,1,1) {A};
-\addplot3 [color=mycolor2,mark size=4.5pt,only marks,mark=*,mark options={solid,fill=white,draw=black}]
+ \addplot3 [color=mycolor2,mark size=4.5pt,only marks,mark=*,mark options={solid,fill=white,draw=black}]
  table[row sep=crcr] {%
 -1	1	-1\\
 1	1	-1\\
 -1	-1	1\\
 1	-1	1\\
 };
- \node[align=center, text=black]
-at (axis cs:-1,1,-1) {B};
-\node[align=center, text=black]
-at (axis cs:1,1,-1) {B};
-\node[align=center, text=black]
-at (axis cs:-1,-1,1) {B};
-\node[align=center, text=black]
-at (axis cs:1,-1,1) {B};
-\end{axis}
+ \end{axis}
 
 \begin{axis}[%
 width=0.509in,
@@ -127,95 +97,65 @@ ymax=1,
 zmin=-1,
 zmax=1,
 view={-77.4711922908485}{18.0246645268103},
-hide axis,
-title style={font=\bfseries},
-title={Type III}
+hide axis
 ]
-
-\addplot3[area legend,solid,draw=black,fill=blue,fill opacity=0,forget plot]
-table[row sep=crcr] {%
-x	y	z\\
+\addplot3 [color=black,solid]
+ table[row sep=crcr] {%
 -1	-1	-1\\
 1	-1	-1\\
 1	-1	1\\
 -1	-1	1\\
-}--cycle;
-
-\addplot3[area legend,solid,draw=black,fill=blue,fill opacity=0,forget plot]
-table[row sep=crcr] {%
-x	y	z\\
+};
+ \addplot3 [color=black,solid]
+ table[row sep=crcr] {%
 1	-1	-1\\
 1	1	-1\\
 1	1	1\\
 1	-1	1\\
-}--cycle;
-
-\addplot3[area legend,solid,draw=black,fill=blue,fill opacity=0,forget plot]
-table[row sep=crcr] {%
-x	y	z\\
+};
+ \addplot3 [color=black,solid]
+ table[row sep=crcr] {%
 1	1	-1\\
 -1	1	-1\\
 -1	1	1\\
 1	1	1\\
-}--cycle;
-
-\addplot3[area legend,solid,draw=black,fill=blue,fill opacity=0,forget plot]
-table[row sep=crcr] {%
-x	y	z\\
+};
+ \addplot3 [color=black,solid]
+ table[row sep=crcr] {%
 -1	1	-1\\
 -1	-1	-1\\
 -1	-1	1\\
 -1	1	1\\
-}--cycle;
-
-\addplot3[area legend,solid,draw=black,fill=blue,fill opacity=0,forget plot]
-table[row sep=crcr] {%
-x	y	z\\
--1	-1	-1\\
-1	-1	-1\\
-1	1	-1\\
--1	1	-1\\
-}--cycle;
-
-\addplot3[area legend,solid,draw=black,fill=blue,fill opacity=0,forget plot]
-table[row sep=crcr] {%
-x	y	z\\
--1	-1	1\\
-1	-1	1\\
-1	1	1\\
--1	1	1\\
-}--cycle;
-\addplot3 [color=mycolor1,mark size=4.5pt,only marks,mark=*,mark options={solid,fill=black,draw=black}]
+};
+ \addplot3 [color=black,solid]
  table[row sep=crcr] {%
 -1	-1	-1\\
 1	-1	-1\\
 1	1	-1\\
--1	-1	1\\
+-1	1	-1\\
 };
- \node[align=center, text=white]
-at (axis cs:-1,-1,-1) {A};
-\node[align=center, text=white]
-at (axis cs:1,-1,-1) {A};
-\node[align=center, text=white]
-at (axis cs:1,1,-1) {A};
-\node[align=center, text=white]
-at (axis cs:-1,-1,1) {A};
-\addplot3 [color=mycolor2,mark size=4.5pt,only marks,mark=*,mark options={solid,fill=white,draw=black}]
+ \addplot3 [color=black,solid]
+ table[row sep=crcr] {%
+-1	-1	1\\
+1	-1	1\\
+1	1	1\\
+-1	1	1\\
+};
+ \addplot3 [color=mycolor1,mark size=4.5pt,only marks,mark=*,mark options={solid,fill=black,draw=black}]
+ table[row sep=crcr] {%
+-1	-1	-1\\
+1	-1	-1\\
+-1	-1	1\\
+-1	1	1\\
+};
+ \addplot3 [color=mycolor2,mark size=4.5pt,only marks,mark=*,mark options={solid,fill=white,draw=black}]
  table[row sep=crcr] {%
 -1	1	-1\\
+1	1	-1\\
 1	-1	1\\
--1	1	1\\
 1	1	1\\
 };
- \node[align=center, text=black]
-at (axis cs:-1,1,-1) {B};
-\node[align=center, text=black]
-at (axis cs:1,-1,1) {B};
-\node[align=center, text=black]
-at (axis cs:-1,1,1) {B};
-\node[align=center, text=black]
-at (axis cs:1,1,1) {B};
-\end{axis}
+ \end{axis}
 
 \begin{axis}[%
 width=0.509in,
@@ -231,93 +171,63 @@ ymax=1,
 zmin=-1,
 zmax=1,
 view={-77.4711922908485}{18.0246645268103},
-hide axis,
-title style={font=\bfseries},
-title={Type IV}
+hide axis
 ]
-
-\addplot3[area legend,solid,draw=black,fill=blue,fill opacity=0,forget plot]
-table[row sep=crcr] {%
-x	y	z\\
+\addplot3 [color=black,solid]
+ table[row sep=crcr] {%
 -1	-1	-1\\
 1	-1	-1\\
 1	-1	1\\
 -1	-1	1\\
-}--cycle;
-
-\addplot3[area legend,solid,draw=black,fill=blue,fill opacity=0,forget plot]
-table[row sep=crcr] {%
-x	y	z\\
+};
+ \addplot3 [color=black,solid]
+ table[row sep=crcr] {%
 1	-1	-1\\
 1	1	-1\\
 1	1	1\\
 1	-1	1\\
-}--cycle;
-
-\addplot3[area legend,solid,draw=black,fill=blue,fill opacity=0,forget plot]
-table[row sep=crcr] {%
-x	y	z\\
+};
+ \addplot3 [color=black,solid]
+ table[row sep=crcr] {%
 1	1	-1\\
 -1	1	-1\\
 -1	1	1\\
 1	1	1\\
-}--cycle;
-
-\addplot3[area legend,solid,draw=black,fill=blue,fill opacity=0,forget plot]
-table[row sep=crcr] {%
-x	y	z\\
+};
+ \addplot3 [color=black,solid]
+ table[row sep=crcr] {%
 -1	1	-1\\
 -1	-1	-1\\
 -1	-1	1\\
 -1	1	1\\
-}--cycle;
-
-\addplot3[area legend,solid,draw=black,fill=blue,fill opacity=0,forget plot]
-table[row sep=crcr] {%
-x	y	z\\
+};
+ \addplot3 [color=black,solid]
+ table[row sep=crcr] {%
 -1	-1	-1\\
 1	-1	-1\\
 1	1	-1\\
 -1	1	-1\\
-}--cycle;
-
-\addplot3[area legend,solid,draw=black,fill=blue,fill opacity=0,forget plot]
-table[row sep=crcr] {%
-x	y	z\\
+};
+ \addplot3 [color=black,solid]
+ table[row sep=crcr] {%
 -1	-1	1\\
 1	-1	1\\
 1	1	1\\
 -1	1	1\\
-}--cycle;
-\addplot3 [color=mycolor1,mark size=4.5pt,only marks,mark=*,mark options={solid,fill=black,draw=black}]
+};
+ \addplot3 [color=mycolor1,mark size=4.5pt,only marks,mark=*,mark options={solid,fill=black,draw=black}]
  table[row sep=crcr] {%
 -1	-1	-1\\
 1	-1	-1\\
 -1	1	-1\\
 -1	-1	1\\
 };
- \node[align=center, text=white]
-at (axis cs:-1,-1,-1) {A};
-\node[align=center, text=white]
-at (axis cs:1,-1,-1) {A};
-\node[align=center, text=white]
-at (axis cs:-1,1,-1) {A};
-\node[align=center, text=white]
-at (axis cs:-1,-1,1) {A};
-\addplot3 [color=mycolor2,mark size=4.5pt,only marks,mark=*,mark options={solid,fill=white,draw=black}]
+ \addplot3 [color=mycolor2,mark size=4.5pt,only marks,mark=*,mark options={solid,fill=white,draw=black}]
  table[row sep=crcr] {%
 1	1	-1\\
 1	-1	1\\
 -1	1	1\\
 1	1	1\\
 };
- \node[align=center, text=black]
-at (axis cs:1,1,-1) {B};
-\node[align=center, text=black]
-at (axis cs:1,-1,1) {B};
-\node[align=center, text=black]
-at (axis cs:-1,1,1) {B};
-\node[align=center, text=black]
-at (axis cs:1,1,1) {B};
-\end{axis}
+ \end{axis}
 \end{tikzpicture}%

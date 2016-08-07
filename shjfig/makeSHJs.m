@@ -1,7 +1,7 @@
 close;clear;clc
 load shj
 
-
+assignments(:,3) = [1 1 2 2 1 2 1 2]';
 
 types = [2 3 4];
 msize=9;
@@ -23,7 +23,8 @@ for  i =1:3
 	y=[-1	-1	 1	 1	-1	-1;-1	 1	 1	-1	-1	-1;-1	 1	 1	-1	 1	 1;-1	-1	 1	 1	 1	 1];
 	z=[-1	-1	-1	-1	-1	 1;-1	-1	-1	-1	-1	 1; 1	 1	 1	 1	-1	 1; 1	 1	 1	 1	-1	 1];
 	for j=1:6
-		h=patch(x(:,j),y(:,j),z(:,j),'n','facealpha',0,'edgecolor','k');
+% 		h=patch(x(:,j),y(:,j),z(:,j),'linestyle','n','facealpha',0,'edgecolor','k');
+		h=plot3(x(:,j),y(:,j),z(:,j),'k');
 	end
 	
 	view([-45,-10,15])
@@ -36,13 +37,13 @@ for  i =1:3
 		
 		plot3(xs,ys,zs,'o','markersize',msize,...
 			'markerfacecolor',colors(j,:),'markeredgecolor','k')
-		text(xs,ys,zs,char(labs(j)),...
-			'color',1-colors(j,:),'horizontalalignment','center')
+% 		text(xs,ys,zs,char(labs(j)),...
+% 			'color',1-colors(j,:),'horizontalalignment','center')
 		
 	end
 	axis square
 	axis off
-	title(xlabs(i))
+% 	title(xlabs(i))
 
 	
 	
@@ -54,3 +55,5 @@ end
 set(gcf,'position',[300 200 pdfsize])
 set(gcf, 'color', 'w'); set(gca, 'color', 'w');  
 matlab2tikz shj.tex
+
+export_fig shj.pdf -opengl
